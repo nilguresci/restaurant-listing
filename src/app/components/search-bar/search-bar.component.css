@@ -1,0 +1,45 @@
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 348px;
+  height: 51pt;
+  margin-top: 1rem;
+}
+
+#myInput {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 23px;
+  background-position-x: left;
+  background-origin: padding-box;
+  box-shadow: 0 0px 10pt rgb(0 0 0 / 0.2);
+  width: 300px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  /* margin-bottom: 12px; */
+}
+
+.filter {
+  width: 46px;
+  height: 46px;
+  display: flex;
+}
+.filter img {
+  border-radius: 9px;
+}
+
+@media only screen and (min-device-width: 481px) {
+  .searchBar {
+    width: 100%;
+  }
+  #myInput {
+    width: 99%;
+  }
+  .search {
+    width: 100%;
+  }
+}

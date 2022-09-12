@@ -1,0 +1,51 @@
+.restaurant-info {
+  font-size: 12px;
+}
+
+.firstLine {
+  display: flex;
+  justify-content: space-between;
+
+  opacity: 50%;
+  color: #1a1824;
+}
+.secondLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  width: 72px;
+  height: 15px;
+}
+
+.basket {
+  width: 12px;
+  height: 12px;
+  align-self: center;
+}
+
+.minOrderAmount {
+  align-items: baseline;
+  /* width: 156px; */
+}
+
+.minAmount {
+  width: 149px;
+  height: 15px;
+}
+.isItOpen {
+  width: 26%;
+  height: 15px;
+  color: #34c47c;
+}
+
+.distance {
+  width: 44%;
+  height: 15px;
+}
+
+.workingHours {
+  width: 26%;
+  color: #1a182480;
+}

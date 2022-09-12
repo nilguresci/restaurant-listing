@@ -1,0 +1,16 @@
+<div class="restaurant-info">
+    <div class="firstLine">
+        <div class="category">Coffe,Tatlı</div>
+        <div class="minOrderAmount d-flex">
+            <img class="basket" src="assets/basket2.svg" alt="">
+            <div class="minAmount">Min. Sipariş Tutarı: ₺{{testText?.minOrderPrice}}</div>
+        </div>
+    </div>
+    <div class="secondLine">
+        <div class="distance "> 3 km yakınında</div>
+        <div class="isItOpen ">İşletme {{testText?.status ? 'açık' : 'kapalı'}}</div>
+        <div class="workingHours ">
+            {{ testText?.workingHours![0].open}} /
+            {{ testText?.workingHours![0].close}}</div>
+    </div>
+</div>

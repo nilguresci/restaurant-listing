@@ -1,0 +1,34 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let restaurant of restaurants">
+        <div class="card">
+            <img src="assets/visneli-sarmal.png" class="restaurantImg" alt="...">
+            <div class="absolute"> </div>
+            <img class="star" src="assets/star.png" alt="">
+            <div class="starRate">{{restaurant.storeInfo.rate}}</div>
+            <div class="card-body">
+                <h5 class="card-title">{{restaurant.title}}</h5>
+                <app-restaurant-info [testText]="restaurant.storeInfo"></app-restaurant-info>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item" (click)="setPage(page-1)" *ngIf="page!=0"><a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item" (click)="setPage(page)"><a class="page-link" href="#">{{page+1}} </a></li>
+            <li class="page-item" (click)="setPage(page+1)" *ngIf="!(page>=8)"><a class="page-link"
+                    href="#">{{page+2}}</a>
+            </li>
+            <li class="page-item" (click)="setPage(page+2)" *ngIf="!(page>=7)"><a class="page-link"
+                    href="#">{{page+3}}</a>
+            </li>
+            <li class="page-item" (click)="setPage(page+1)" *ngIf="page!=9"><a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>

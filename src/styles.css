@@ -12,13 +12,15 @@ body {
 }
 
 .container {
-  max-width: 500px; /*sayfa büyük ekranda açılınca max-width kaldırılmalı*/
+  max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  /*border: 1px solid steelblue;
-  border-radius: 5px; 
-  padding: 30px;*/
+}
+
+.listTitle {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 @media only screen and (min-device-width: 481px) {
   .container {
